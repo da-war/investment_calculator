@@ -10,11 +10,11 @@ func main() {
 	var investmentAmount, years, expectedReturnRate float64
 	//print in termial that you need to input the investment amount, years, and expected return rate
 	fmt.Print("Enter the investment amount: ")
-	fmt.Scanln(&investmentAmount)
+	fmt.Scan(&investmentAmount)
 	fmt.Print("Enter the number of years: ")
-	fmt.Scanln(&years)
+	fmt.Scan(&years)
 	fmt.Print("Enter the expected return rate: ")
-	fmt.Scanln(&expectedReturnRate)
+	fmt.Scan(&expectedReturnRate)
 
 	doPow := math.Pow(1+expectedReturnRate/100, years)
 	futureValue := investmentAmount * doPow
