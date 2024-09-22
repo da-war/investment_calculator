@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
+
+	var welcome string = stringGetter()
+	fmt.Println(welcome)
 	const inflationRate = 2.5
 	var investmentAmount, years, expectedReturnRate float64
 	//print in termial that you need to input the investment amount, years, and expected return rate
@@ -21,4 +24,8 @@ func main() {
 
 	futureRealValue := futureValue / math.Pow(1+inflationRate/100, years)
 	fmt.Printf("The Future Value: %.2f\nThe Future Actual Value %.3f\n", futureValue, futureRealValue)
+}
+
+func stringGetter() string {
+	return "Welcome to the Investment Calculator"
 }
